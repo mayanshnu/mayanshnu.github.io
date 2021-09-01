@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://www.ysneaker.com/yangyang/ -->
+<html lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>马燕教授</title>
+    <script type="text/javascript" src="./jquery-3.4.1.min.js.下载"></script>
+    <script type="text/javascript" src="./bootstrap.min.js.下载"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style type="text/css">
+        body {
+            font-family: "Georgia",  "sans-serif";
+        }
+        .text-orange {
+            color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 左边栏 -->
+<div class="col-3 p-3 fixed-top">
+    <img class="img-fluid" src="./mayan.jpg" style="max-width: 70%; margin-left:15%">
+    <h4 class="text-center">Ma Yan - 马燕</h4>
+    <hr>
+    <p class="my-1" lang="cn" style="">马燕 教授</p>
+    <p class="my-1" lang="cn" style="">上海师范大学, 信息与机电工程学院</p>
+    <hr>
+    <p class="my-1" lang="cn" style="">
+        <strong>地址： </strong>上海市徐汇区桂林路100号（200233）
+    </p>
+    <p class="my-1">
+        <strong>Email : </strong>
+        <a href="ma-yan@shnu.edu.cn">ma-yan@shnu.edu.cn</a>
+    </p>
+    <p class="my-1">
+        <strong>联系电话 : </strong>
+        <a>021-64322341</a>
+    </p>
+</div>
+<!-- 右边栏 -->
+<div class="offset-3 p-3">
+    <!-- 导航栏 -->
+    <div id="div-nav" class="row p-3 border-bottom sticky-top bg-white">
+        <div class="col-10 my-auto">
+            <ul class="nav nav-pills" lang="cn" style="">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="javascript:void(0);" about="biography">个人简介</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="javascript:void(0);" about="research">研究方向</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="javascript:void(0);" about="publications">发表论文</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="javascript:void(0);" about="teaching">教学</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="javascript:void(0);" about="students">学生</a>
+                </li>
+				<li class="nav-item">
+				    <a class="nav-link text-dark" href="javascript:void(0);" about="enroll">招生信息</a>
+				</li>
+            </ul>
+            <script type="text/javascript">
+                $("a.nav-link").click(function () {
+                    let anchor_id = $(this).attr("about");
+                    if (anchor_id === "lang") {
+                        $("[lang=cn]").toggle();
+                        $("[lang=en]").toggle();
+                        return;
+                    }
+                    let nav_height = $("#div-nav").outerHeight();
+                    let anchor_top = $("#" + anchor_id).offset().top;
+                    let margin = 20;
+                    $('html,  body').animate({scrollTop: anchor_top - nav_height - margin},  300);
+                })
+                $("a.nav-link").hover(function () {
+                    $(this).addClass("bg-primary text-white").removeClass("text-dark");
+                },  function () {
+                    $(this).removeClass("bg-primary text-white").addClass("text-dark");
+                })
+            </script>
+        </div>
+        <div class="col">
+            <img class="img-fluid" src="./shnu.png">
+        </div>
+    </div>
+    <!-- 个人简介 -->
+    <div id="biography" class="m-3">
+        <div class="border-bottom">
+            <h3 class="text" lang="cn" style="color: #006F68;">个人简介</h3>
+        </div>
+        <div class="p-2" lang="cn" style="">
+            马燕, 现为信息与机电工程学院计算机系教授, 硕士生导师, 计算机软件与理论硕士点学科带头人。
+			1999年毕业于上海交通大学模式识别与图像处理研究所</a>, 获博士学位, 专业为模式识别与智能系统。
+			2003年赴澳大利亚堪培拉CIT技术学院作短期进修, 2005年赴美国Weber State University访学。
+        </div>
+    </div>
+    <!-- 研究方向 -->
+    <div id="research" class="m-3">
+        <div class="border-bottom">
+            <h3 class="text" lang="cn" style="color: #006F68;">研究方向</h3>
+        </div>
+        <div class="p-2" lang="cn" style="">
+            <p class="font-weight-bold my-0">图像处理</p>
+            <p class="ml-4">
+                ● 半监督图像分割, 颗粒图像分割。
+            </p>
+            <p class="font-weight-bold my-0">模式识别</p>
+            <p class="ml-4">
+                ● 聚类分析, 例如, 使用近邻关系或最小生成树进行聚类。
+            </p>
+			<p class="font-weight-bold my-0">深度学习</p>
+			<p class="ml-4">
+			    ● 解决序列图像分类问题。
+			</p>
+        </div>
+    </div>
+
+    <!-- 发表论文 -->
+    <div id="publications" class="m-3">
+        <div class="border-bottom">
+            <h3 class="text" lang="cn" style="color: #006F68;">发表论文</h3>
+        </div>
+        <!-- Journal Articles -->
+        <div class="p-2">
+            <h4 class="text-orange" lang="cn" style="color: #006F68;">期刊文章</h4>
+            <ul>
+				<li class="my-2">
+				<b>Yan Ma*</b>,  Hongren Lin,  Yan Wang,  Hui Huang,  Xiaofu He. A multi-stage hierarchical clustering algorithm based on centroid of tree and cut edge constraint. Information Sciences 557 (2021): 194-219. 
+				</li>
+				<li class="my-2">
+				Yan Wang,  <b>Yan Ma*</b>,  Hui Huang. A neighborhood-based three-stage hierarchical clustering algorithm. Multimedia Tools and Applications (2021): 1-29.
+				</li>
+				<li class="my-2">
+				Jianqiang Huang,  <b>Yan Ma*</b>. Bat algorithm based on an integration strategy and Gaussian distribution. Mathematical Problems in Engineering 2020 (2020).
+				</li>
+				<li class="my-2">
+				Hui Huang,  <b>Yan Ma*</b>. A hybrid clustering approach for bag-of-words image categorization. Mathematical Problems in Engineering 2019 (2019).
+				</li>
+				<li class="my-2">
+				Xiaobo Lv,  <b>Yan Ma*</b>,  Xiaofu He,  Hui Huang,  Jie Yang,  CciMST: A Clustering Algorithm Based on Minimum Spanning Tree and Cluster Centers,  Mathematical Problems in Engineering,  Vol. 2018, ,  pp. 1–11,  2019.
+				</li>
+				<li class="my-2">
+				Jie Yang, <b>Yan Ma*</b>, Xiangfen Zhang,  Shunbao Li, Yuping Zhang, An Initialization Method Based on Hybrid Distance for k-means algorithm, Neural Computation, 2017, 29(11)：3094-3117. 
+				</li>
+				<li class="my-2">
+				Lifeng Liu,  <b>Yan Ma*</b>, Xiangfen Zhang,  Yuping Zhang, Shunbao Li, High discriminative SIFT feature and feature pair selection to improve the bag of visual words model, IET Image Processing, 2017, 11(11)：994-1001.
+				</li>
+				<li class="my-2">
+				Mingzhe Su, <b>Yan Ma*</b>, Xiangfen Zhang, Yan Wang, Yuping Zhang, MBR-SIFT: A mirror reflected invariant feature descriptor using a binary representation for image matching, PLOS ONE, 2017.5.18, 12(5).
+				</li>
+				<li class="my-2">
+				Xiangfen Zhang*，Hongfeng Wu，<b>Yan Ma</b>，A new auto-focus measure based on medium frequency discrete cosine transform filtering and discrete cosine transform，Applied and Computational Harmonic Analysis，2016，40(2)：430-437.
+				</li>
+				<li class="my-2">
+				Jie Yang, <b>Yan Ma*</b>, Xiangfen Zhang, Shunbao Li, Yuping Zhang. A minimum spanning tree-based method for initializing the K-means clustering algorithm. International Journal of Computer and Information Engineering, 2016, 11(1): 13-17.
+				</li>
+				<li class="my-2">
+				Hongling Wang, <b>Yan Ma*</b>, Xiangfen Zhang, LGTP and adaptive blockpartition strategy based face recognition for single sample problem, Journal of Computational Information Systems, 2015, 11(21)：7983-7993
+				</li>
+				<li class="my-2">
+				Yanlu Xu, <b>Yan Ma*</b>, Zhang Xiangfen, Li Shunbao, Image matching algorithm based on color-sift and shape context, Journal of Computational Information Systems, 2015.4.1, 11(7)：2499-2507
+				</li>
+				<li class="my-2">
+				<b>马燕*</b>, 殷志昂, 黄慧, 张玉萍, 结合卷积神经网络与曲线拟合的人体尺寸测量, 中国图象图形学报, 已录用
+				</li>
+				<li class="my-2">
+				张洪涛, <b>马燕*</b>, 张相芬, 张玉萍, 李顺宝, 高鉴别力SIFT和LGQP特征及其在人脸识别中的应用, 小型微型计算机系统, 2017.11.1, 38(11)：2488-2493
+				</li>
+				<li class="my-2">
+				刘利锋, <b>马燕*</b>, 张相芬, 李顺宝, 张玉萍, 采用二值SIFT特征描述的图像匹配方法, 计算机应用与软件, 2016, 33(12)：152-155
+				</li>
+				<li class="my-2">
+				周文倩, <b>马燕*</b>, 李顺宝, 张相芬, 张玉萍, 应用于QR码信息加密的RC4改进算法, 计算机工程, 2015.8.15, (08)：105-109
+				</li>
+            </ul>
+        </div>
+        <!-- Conference Papers -->
+        <div class="p-2">
+            <h4 class="text" lang="cn" style="color: #006F68;">会议文章</h4>
+            <ul>
+                 <li class="my-2">
+                 Wei Zhao, <b>Yan Ma*</b>, Xiaofu He, Hui Huang, Xiao Lin, and Yuping Zhang. Face Liveness Detection Using Eulerian Video Magnification and SIFT Algorithm. In 2020 IEEE International Conference on Artificial Intelligence and Information Systems (ICAIIS), pp. 680-684. IEEE, 2020.
+                 </li>
+				 <li class="my-2">
+			     Mingzhe Su, <b>Yan Ma*</b>, Xiangfen Zhang, Shunbao Li, Yuping Zhang. A Binary SIFT Matching Method Combined with the Color and Exposure Information. In 2017 International Conference on Network and Information Systems for Computers (ICNISC), pp. 254-257. IEEE, 2017.
+				 </li>
+            </ul>
+        </div>
+		
+		<div class="p-2">
+		    <h4 class="text" lang="cn" style="color: #006F68;">授权发明专利</h4>
+		    <ul>
+		         <li class="my-2">
+		         马燕，赵伟，李顺宝，张玉萍，黄慧，一种基于极短视频的人脸活体视频方法，2021.9，ZL201711275569.9
+		         </li>
+				 <li class="my-2">
+			     马燕，贾俊瑛，黄慧，李顺宝，张玉萍，一种人体图像裆部检测方法，2021.7，ZL201810928482.5
+				 </li>
+				 <li class="my-2">
+				 马燕，何帅兵，黄慧，詹新林，李顺宝，一种基于人体图像的人体腰围测量方法及腰带，2020.2，ZL201810257544.4
+				 </li>
+				 <li class="my-2">
+				 Ma Yan, Zhang Junzhu, Wang Hongling, Huang Hui, Li Shunbao, Zhang Yuping, A method for separating skin pigment based on sub-block screening and pigment coefficient matrix, 2020.6，2020100947
+				 </li>
+				 <li class="my-2">
+				 马燕，刘利锋，张相芬，李顺宝，张玉萍，一种基于改进词袋模型的图像分类方法，2020.2，ZL201710133021.4
+				 </li>
+				 <li class="my-2">
+				 马燕，张宁丽，张相芬，徐晓钟，天然气产销优化调度模型，2018.8.24，ZL201410336284.1
+				 </li>
+				 <li class="my-2">
+				 马燕，程玮，李顺宝，夏根明，复杂纤维图像的识别方法，2015.8.19，ZL201210588021.0
+				 </li>
+		    </ul>
+		</div>
+
+    <!-- 荣誉 -->
+    <div id="teaching" class="m-3">
+        <div class="border-bottom">
+            <h3 class="text-orange" lang="cn" style="color: #006F68;">教学</h3>
+        </div>
+        <div class="p-2">
+            <ul lang="cn" style="">
+				<li>数字图像处理（研究生课程）</li>
+				<li>数字信号处理（研究生课程）</li>
+				<li>计算机图形学（本科生课程）</li>
+				<li>多媒体技术（本科生课程）</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="students" class="m-3">
+        <div class="border-bottom">
+            <h3 class="text-orange" lang="cn" style="color: #006F68;">学生</h3>
+        </div>
+        <div class="p-2" lang="cn" style="">
+            <h4>毕业生</h4>
+            <ul>
+                <li>王妍（一篇SCI论文；一项专利；获校优秀毕业生；目前就职于中国银行）；</li>
+				<li>张军柱（两项专利；获国家奖学金；目前就职于上海朗合医疗）；</li>
+				<li>殷志昂（一篇中文核心期刊论文；目前就职于巨人网络）；</li>
+				<li>林鸿仁（一篇SCI论文；目前就职于阿里）；</li>
+				<li>李盛楠（两项专利；获国家奖学金；目前就职于网易）；</li>
+				<li>贾俊瑛（两项专利；目前就职于中学）；</li>
+				<li>李秋岩（一篇会议论文；目前就职于科协）；</li>
+				<li>吕晓波（一篇SCI论文；获国家奖学金；获市优秀毕业生；目前就职于大众）</li>
+				<li>何帅兵（一项专利；目前就职于上交所）；</li>
+				<li>赵伟（一项专利；一篇会议论文；目前就职于B站）；</li>
+				<li>杨杰（一篇SCI论文；获市优秀毕业生；目前就读于University of Technology Sydney博士生）</li>
+				<li>苏明哲（一篇SCI论文；获市优秀毕业生；获国家奖学金；目前就职于大众）</li>
+				<li>刘利锋（一篇SCI论文；获市优秀毕业生；目前就职于联通）</li>
+				<li>毛丽婷（一项软著；目前就职于上师大）</li>
+				<li>徐衍鲁（一篇EI论文；获市优秀毕业生；获国家奖学金；目前就职于上师大）</li>
+				<li>张宁丽（一项专利；获校优秀毕业生；目前就职于科世达-华阳）</li>
+				<li>周文倩（一篇会议论文；目前就职于机关）</li>
+				<li>王红岭（一篇EI论文；目前就职于谱盟光电）</li>
+				<li>徐通（一篇论文；目前就职于京东）</li>
+				<li>王燕（一篇中文核心期刊论文；2篇会议论文；获国家奖学金；获得图卢兹三大数理信息与通信工程博士生院博士学位，目前就职于华为）</li>
+            </ul>
+        </div>
+    </div>
+
+	<div id="enroll" class="m-3">
+	    <div class="border-bottom">
+	        <h3 class="text" lang="cn" style="color: #006F68;">招生信息</h3>
+	    </div>
+		<div class="p-2" lang="cn" style="">
+		  非常欢迎报考我的研究生，在联系我之前，可以先了解一下我们在科研方面的想法是否一致：
+		</div>
+		<ul>
+		<li>研究兴趣：半监督图像分割，颗粒图像分割，图像特征提取和匹配，聚类算法及其应用，有监督学习算法。</li>
+		<li>招生期望：希望能够招收数学基础好、编程能力强、英语功底扎实的学生。</li>
+		<li>培养目标：培养学生发现问题和解决问题的科研素养，经过精心组织的科研训练，使学生具备扎实的专业知识、缜密的科研思维、较强的动手能力；学生在校期间在世界高水平学术期刊上发表论文，并有志于毕业后继续从事学术研究工作。</li>
+		<li>我的承诺：(1) 在整个研究生阶段，包括选题、算法提出和改进、实验验证和论文撰写等，我都会亲自给予全方位的指导；(2) 我会保证学生有充足的时间来完成科研，而不会布置学生处理与科研无关的行政事务。</li>
+		</ul>
+	</div>
+	
+    <!-- bottom -->
+    <div class="border-top" lang="cn" style="">
+        最后修改于2021年08月31日。 
+    </div>
+</div>
+
+
+</body></html>
